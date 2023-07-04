@@ -8,7 +8,7 @@ const app = express(); // initialize express
 
 const server = http.createServer(app);
 
-
+app.use(cors());
 // set port to value received from environment variable or 8080 if null
 const port = process.env.PORT || 8080
 
