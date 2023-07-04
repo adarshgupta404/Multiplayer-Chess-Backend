@@ -2,6 +2,7 @@ const express = require('express');
 const { Server } = require("socket.io");
 const { v4: uuidV4 } = require('uuid');
 const http = require('http');
+const cors = require('cors');
 
 const app = express(); // initialize express
 
