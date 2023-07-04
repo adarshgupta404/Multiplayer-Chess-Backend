@@ -129,6 +129,10 @@ io.on('connection', (socket) => {
         rooms.delete(data.roomId); // <- 4 delete room from rooms map
     });
 });
+app.get("/", function (req, res) {
+    res.send("Server is Running!")
+})
+
 
 server.listen(port, () => {
     console.log(`listening on *:${port}`);
